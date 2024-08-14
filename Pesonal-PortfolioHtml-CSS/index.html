@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio | Resume</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="para">
+                <p>UI/UX Designer</p>
+                <h1>I'm <span>Kevin</span><br> From Pakistan</h1>
+            </div>
+        </div>
+    </div>
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="images/img.jpg">
+                </div>
+                <div class="col-2">
+                    <h1>About Me</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae dolor repellat eveniet amet eligendi sapiente voluptatum cum nostrum? Nihil iusto quo deserunt quaerat dolorum exercitationem, quis ipsam, tenetur repellat, deleniti minus quasi totam minima provident esse? Neque porro repellendus quas unde adipisci fugit, cupiditate, molestiae dolore eveniet magni quis expedita incidunt. Ut exercitationem libero amet in maiores minima consequatur ea iste quo, sapiente, magnam provident a molestias quod nesciunt, rem quidem repellat similique. Voluptates eveniet dignissimos veniam adipisci doloremque sed, nemo voluptas est soluta vero optio magni magnam cum, dolorum in obcaecati quae dolor! Magni quis perferendis dicta veniam voluptate.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active" onclick="opentab('Skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-content active" id="Skills">
+                        <ul>
+                            <li><span>UI?UX</span><br>Designing Web Interfaces</li>
+                            <li><span>Web Developer</span><br>Website Development</li>
+                            <li><span>Shopify</span><br>Designing Shopify Stores</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Experience">
+                        <ul>
+                            <li><span>2022</span><br>Wordpress Training at DigiSkills.pk</li>
+                            <li><span>2023</span><br>Shopify & Amazone Training from E-Rozgar online institute</li>
+                            <li><span>2024</span><br>Currently Learning From Youtube</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Education">
+                        <ul>
+                            <li><span>2016-18</span><br>Matriculation 892/1100</li>
+                            <li><span>2018-2020</span><br>Intermediate 728/1100</li>
+                            <li><span>2020-2024</span><br>Bs Information technology 3.3-/4.0</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <script>
+        let tablinks = document.getElementsByClassName("tab-links");
+        let tabcontents= document.getElementsByClassName("tab-content");
+        function opentab(tabname){
+            for (tab of tablinks){
+                tab.classList.remove("active");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active");
+            }
+            event.currentTarget.classList.add("active");
+            document.getElementById(tabname).classList.add('active')
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+body{
+    background:#002339;
+}
+.container{
+    margin: 150px;
+    width: 30%;
+    font-size: 25px;
+    color: white;
+}
+.display{
+    height: 40px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+
+}
+.display img{
+    height: 60px;
+    cursor: pointer;
+}
+.display input{
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+}
+button{
+    height: 40px;
+    background-color: #019f43be;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    width: 54%;
+}
+button img{
+    mix-blend-mode: color-burn ;
+    height: 30px;
+    
+}
